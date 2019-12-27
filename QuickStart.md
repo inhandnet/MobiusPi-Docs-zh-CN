@@ -34,13 +34,8 @@
       - [8.1 使用pip为APP安装第三方依赖库](#81-使用pip为app安装第三方依赖库)
       - [8.2 启用代码自动补全](#82-启用代码自动补全)
       - [8.3 FAQ](#83-faq)
-  - [第三节 MobiusPi Python运行环境介绍](#第三节-mobiuspi-python运行环境介绍)
-    - [MobiusPi架构简介](#mobiuspi架构简介)
-    - [MobiusPi文件系统说明](#mobiuspi文件系统说明)
 
 <!-- /code_chunk_output -->
-
-
 
 
 ## 第一节 搭建开发环境
@@ -285,24 +280,3 @@ A1：出现此问题的原因是因为InGateway设备的密钥更新了，但是
 - Q2:建立SFTP连接后，在左侧空白处右键选择”Sync Local->Remote”将代码同步到远程服务器时提示“配置的身份验证方法失败”怎么解决？
 ![配置的身份验证方法失败](images/2019-12-19-18-33-09.png)
 A2:确保“sftp.json”文件中的password项与InGateway设备的密码一致。一致后重新建立SFTP连接并同步代码。
-
-
-## 第三节 MobiusPi Python运行环境介绍
-### MobiusPi架构简介
-MobiusPI整体架构大致可以划分为以下三部分
-- 1.MobiusPi库
-  提供InGateway设备的以太网、IO、WIFI等API接口调用所需的依赖库。
-- 2.进程管理
-  Supervisord服务主要提供了APP启动、停止、异常恢复以及日志大小管理等功能，帮助用户管理APP并提高服务可靠性，同时用户也可以根据Supervisord提供的APP运行状态、日志等信息快速定位问题。
-- 3.MQTT消息队列
-  基于MQTT协议实现本地消息队列子系统；并采用MQTT Bridge技术实现InGateway设备与云端的数据传输与控制。本地和远程消息队列采用相同协议，解耦发布消息的客户（发布者）和订阅消息的客户（订阅者）之间的关系，降低系统复杂度和学习曲线。
-![架构图](images/2019-12-26-11-50-12.png)
-
-### MobiusPi文件系统说明
-InGateway设备中所有APP的可执行代码文件、运行配置文件、运行日志等信息均存放在/var/user路径下。该路径下包含app、cfg、lib等文件夹，各文件夹的作用如下：
-- `app`：存放编译后的APP源码
-- `bin`：存放APP的可执行代码连接
-- `cfg`：存放APP运行配置文件
-- `data`：存放APP运行数据
-- `lib`：保留文件夹，用于兼容旧版APP
-- `log`：存放APP运行日志
