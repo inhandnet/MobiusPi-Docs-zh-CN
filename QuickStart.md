@@ -98,7 +98,7 @@
 #### 3.3 配置工程模板
 ##### 3.3.1 使用映翰通标准工程模板
 - 步骤1：请从[这里](https://github.com/inhandnet/MobiuspiProjectTemplates/releases)下载MobiusPi工程模板。  
-MobiusPi提供多种工程模板以方便您快速初始化工程目录。各工程模板的详细说明请参考[这里](https://github.com/inhandnet/MobiuspiProjectTemplates/blob/master/README.md)。本教程使用标准工程模板“helloworld-template”进行演示说明。  
+MobiusPi提供多种工程模板以方便您快速初始化工程目录。各工程模板的详细说明请参考[README.md](https://github.com/inhandnet/MobiuspiProjectTemplates)。本教程使用标准工程模板“helloworld-template”进行演示说明。  
 ![](images/2019-12-25-09-39-17.png)
  &nbsp;
 
@@ -225,7 +225,7 @@ MobiusPi提供多种工程模板以方便您快速初始化工程目录。各工
   - `3000`为建议的调试端口号
   - `HelloWorld/src/main.py`为mian. py的执行路径，请根据您的当前位置适当调整
 
-  InGateway设备的Python开发环境内置了ptvsd依赖库用于远程调试代码，想要了解更多ptvsd插件的用法，请访问[ptvsd使用说明](https://github.com/microsoft/ptvsd/blob/master/README.md)。
+  InGateway设备的Python开发环境内置了ptvsd依赖库用于远程调试代码，想要了解更多ptvsd插件的用法，请访问[ptvsd使用说明](https://github.com/microsoft/ptvsd/)。
   ![](images/2019-12-23-14-59-40.png)
  &nbsp;
 
