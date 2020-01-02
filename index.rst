@@ -3,7 +3,7 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-欢迎使用映翰通开发者文档！
+欢迎使用映翰通MobiusPi开发环境！
 =====================================
 
 .. toctree::

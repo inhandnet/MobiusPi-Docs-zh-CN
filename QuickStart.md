@@ -1,4 +1,4 @@
-# **第一章 快速入门**
+# **第一章 MobiusPi Python开发快速入门**
 
 ## 第一节 搭建开发环境
 ### 1. 准备InGateway硬件设备及其网络环境
@@ -13,7 +13,8 @@
  &nbsp;
 
   - 方法二：使用固定IP地址，设置PC和InGateway设备FE 0/1口处于同一网段。选择“使用下面的IP地址”，输入IP地址（默认为192.168.1.2~192.168.1.254中任意值）；子网掩码（默认255.255.255.0）；默认网关（默认为192.168.1.1）以及DNS服务器地址，单击<确定>。  
-  ![](./images/2019-11-29-16-00-56.png)   
+
+    ![](./images/2019-11-29-16-00-56.png)   
 <br/>
 
 - 步骤2：打开浏览器，访问InGateway设备FE 0/1口IP地址并输入登录用户名和密码。设备出厂的用户名/密码默认为adm/123456。
@@ -212,7 +213,7 @@ MobiusPi提供多种工程模板以方便您快速初始化工程目录。各工
 
   可以在TERMINAL窗口查看远程服务器是否已接收到相应的APP代码。在TERMINAL窗口输入以下命令查看已上传的APP文件夹信息：
   ```
-  >cd app  
+  cd app  
   ls -l
   ```
   ![](./images/2019-12-05-11-15-01.png)
@@ -221,7 +222,7 @@ MobiusPi提供多种工程模板以方便您快速初始化工程目录。各工
 - 步骤2：在终端窗口调试脚本
   同步代码后在终端窗口输入如下命令在InGateway设备中立即执行脚本，执行脚本后在终端窗口查看执行结果：打印“hello world!”。
   ```
-  >python -m ptvsd --host 192.168.1.1 --port 3000 HelloWorld/src/main.py 
+  python -m ptvsd --host 192.168.1.1 --port 3000 HelloWorld/src/main.py 
   ```
   - `192.168.1.1`为InGateway设备FE 0/1口的IP地址
   - `3000`为建议的调试端口号
@@ -278,7 +279,8 @@ MobiusPi提供多种工程模板以方便您快速初始化工程目录。各工
 ### 7. 为APP更新配置文件
 - 步骤1：修改配置文件
   将App的“config.yaml”中的配置```description: "hello world!"```修改为:```description: "hello inhand!"```  
-![](./images/2019-12-05-14-54-34.png) <br/>
+
+  ![](./images/2019-12-05-14-54-34.png) <br/>
  &nbsp;
 
 - 步骤2：导入配置文件并重启APP
@@ -299,7 +301,9 @@ MobiusPi提供多种工程模板以方便您快速初始化工程目录。各工
  &nbsp;
 
 - 步骤2：执行pip install + “依赖库名称” + “==版本号” + “-t” + “APP的lib文件夹路径”命令并回车以安装相应依赖库。（不加版本号时pip会自动安装最新版的依赖库） 
-  >pip install modbus_tk==1.1.0 -t /var/user/app/HelloWorld/lib/
+  ```
+  pip install modbus_tk==1.1.0 -t /var/user/app/HelloWorld/lib/
+  ```
 
   ![](images/2019-12-24-14-37-38.png)
  &nbsp;
@@ -310,13 +314,13 @@ MobiusPi提供多种工程模板以方便您快速初始化工程目录。各工
 
 - 步骤4：使用`export`命令为APP设置环境变量。在终端窗口执行以下命令
   ```
-  >export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/var/user/app/HelloWorld/lib/  
-  >export PYTHONPATH=$PYTHONPATH:/var/user/app/HelloWorld/lib/
+  export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/var/user/app/HelloWorld/lib/  
+  export PYTHONPATH=$PYTHONPATH:/var/user/app/HelloWorld/lib/
   ```
   ![](images/2019-12-24-14-42-58.png)
  &nbsp;
 
-  为APP安装第三方依赖库后，调试前必须要为该APP配置相应的环境变量，否则APP将不能正常运行。当APP未在InGateway设备中运行时APP的环境变量为初始环境变量；APP运行时会自动添加lib文件夹下的第三方依赖库的环境变量。
+  为APP安装第三方依赖库后，调试前必须要为该APP配置相应的环境变量，否则APP将不能正常运行。当APP未在InGateway设备中运行时APP的环境变量为初始环境变量；APP运行时会自动添加lib文件夹下的第三方依赖库的环境变量。<br/>
  &nbsp;
 
 - 步骤5：运行代码以确认APP运行正常
