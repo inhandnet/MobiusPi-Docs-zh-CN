@@ -220,8 +220,9 @@ MobiusPi提供多种工程模板以方便您快速初始化工程目录。各工
 
 - 步骤2：在终端窗口调试脚本
   同步代码后在终端窗口输入如下命令在InGateway设备中立即执行脚本，执行脚本后在终端窗口查看执行结果：打印“hello world!”。
+  ```
   >python -m ptvsd --host 192.168.1.1 --port 3000 HelloWorld/src/main.py 
-
+  ```
   - `192.168.1.1`为InGateway设备FE 0/1口的IP地址
   - `3000`为建议的调试端口号
   - `HelloWorld/src/main.py`为mian. py的执行路径，请根据您的当前位置适当调整
@@ -308,10 +309,10 @@ MobiusPi提供多种工程模板以方便您快速初始化工程目录。各工
  &nbsp;
 
 - 步骤4：使用`export`命令为APP设置环境变量。在终端窗口执行以下命令
+  ```
   >export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/var/user/app/HelloWorld/lib/  
-
   >export PYTHONPATH=$PYTHONPATH:/var/user/app/HelloWorld/lib/
-
+  ```
   ![](images/2019-12-24-14-42-58.png)
  &nbsp;
 
