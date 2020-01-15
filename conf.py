@@ -103,7 +103,7 @@ html_static_path = ['_static']
 # -- Options for HTMLHelp output ---------------------------------------------
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'InGatewaydoc'
+htmlhelp_basename = 'InGateway doc'
 
 
 # -- Options for LaTeX output ------------------------------------------------
@@ -140,7 +140,7 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    (master_doc, 'ingateway', u'InGateway Documentation',
+    (master_doc, 'InGateway', u'InGateway Documentation',
      [author], 1)
 ]
 
