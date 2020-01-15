@@ -25,9 +25,9 @@ MobiusPi是北京映翰通网络技术股份有限公司InGateway系列软硬件
 MobiusPi具备Python开发平台，用户可通过Python开发平台实现定制化APP应用，找到最优的业务解决方案。  <br/>
 为了便于用户开发，映翰通提供实例化Python APP发布包、软件开发工具包(SDK)、实例化Python APP源码、以及API接口等开发工具，在为用户提供典型案例的同时帮助用户基于已有典型案例快速实现定制化解决方案，协助用户提高产品价值并获得更强的竞争力。
 ## **您能得到什么？**
-我们将提供您基于MobiusPi开发平台实现更快、更优的解决方案所需的一切资料，从典型应用到快速入门，再到开发平台架构和API说明。您可以从[MobiusPi开发平台文档](https://ingateway-development-docs.readthedocs.io/zh_CN/latest/index.html)学习MobiusPi开发平台的使用并开始开发适合您业务的定制化APP应用。
+我们将提供您基于MobiusPi开发平台实现更快、更优的解决方案所需的一切资料，从典型应用到快速入门，再到开发平台架构和API说明。您可以从[MobiusPi开发平台文档](https://ingateway-development-docs.readthedocs.io/zh_CN/latest)学习MobiusPi开发平台的使用并开始开发适合您业务的定制化APP应用。
 ## **联系我们**
 如果您想详细了解我们的产品，请访问[公司官网](https://www.inhand.com.cn/)。  <br/>
 如果你想深入了解如何使用MobiusPi开发平台，请访问我们的文档网站：
-- [中文版](https://ingateway-development-docs.readthedocs.io/zh_CN/latest/index.html)
-- [英文版](TO DO)
+- [中文版](https://ingateway-development-docs.readthedocs.io/zh_CN/latest)
+- [英文版](https://ingateway-development-docs-en.readthedocs.io/en/latest/)
