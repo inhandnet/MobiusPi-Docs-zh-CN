@@ -228,8 +228,8 @@ MobiusPi提供多种工程模板以方便您快速初始化工程目录。各工
   ```
   - `192.168.1.1`为IG500的FE 0/1口的IP地址
   - `3000`为建议的调试端口号
-  - `HelloWorld/src/main.py`为mian. py的执行路径，请根据您的当前位置适当调整  
-
+  - `HelloWorld/src/main.py`为mian. py的执行路径，请根据您的当前位置适当调整  <br/>
+ &nbsp;
 
   IG500的Python开发环境内置了ptvsd依赖库用于远程调试代码，想要了解更多ptvsd插件的用法，请访问[ptvsd使用说明](https://github.com/microsoft/ptvsd/)。
   ![](images/2019-12-23-14-59-40.png)
