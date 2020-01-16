@@ -1,8 +1,8 @@
 # **欢迎使用映翰通MobiusPi开发平台！**
-<center><p>
+<div align=center>
 
 ![](images/2020-01-06-16-46-51.png)
-</p></center>
+</div>
 
 ## **什么是MobiusPi？**
 MobiusPi是北京映翰通网络技术股份有限公司InGateway系列软硬件产品的代号。 InGateway系列产品包含两个大的产品系列，InGateway900和InGateway500系列。  <br/>
