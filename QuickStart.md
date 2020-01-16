@@ -103,7 +103,7 @@ MobiusPi是北京映翰通网络技术股份有限公司InGateway系列软硬件
 ##### 3.3.1 使用映翰通标准工程模板
 - 步骤1：请从[这里](https://github.com/inhandnet/MobiuspiProjectTemplates/releases)下载MobiusPi工程模板。  </br>
 MobiusPi提供多种工程模板以方便您快速初始化工程目录。各工程模板的详细说明请参考[README.md](https://github.com/inhandnet/MobiuspiProjectTemplates)。本教程使用标准工程模板“helloworld-template”进行演示说明。  
-![](images/2019-12-25-09-39-17.png)
+![](images/2020-01-16-14-18-53.png)
  &nbsp;
 
 - 步骤2：打开工程模板。  </br>
@@ -139,13 +139,13 @@ MobiusPi提供多种工程模板以方便您快速初始化工程目录。各工
   - `src`：APP源码文件夹
     - `main.py`：APP入口
   - `config.yaml`：APP配置文件，内容可自定义
-  - `setup.py`:APP版本、SDK版本等信息说明，建议参照标准模板定义
+  - `setup.py`:APP版本、SDK版本等信息说明，建议参照标准模板定义  <br/>
    &nbsp;
 
-- 步骤2：使用VS Code打开自定义工程模板文件夹，点击“文件>>打开文件夹”并选择的自定义工程模板文件夹。详细说明请参考第一节中的“3.3.1 使用映翰通标准工程模板”。
+- 步骤2：使用VS Code打开自定义工程模板文件夹，点击“文件>>打开文件夹”并选择的自定义工程模板文件夹。
  &nbsp;
 
-- 步骤3：在命令面板中输入`>Project:Save Project as Template`命令以将当前工程文件存为模板。详细说明请参考第一节中的“3.3.1 使用映翰通标准工程模板”。
+- 步骤3：在命令面板中输入`>Project:Save Project as Template`命令以将当前工程文件存为模板。
 
 ## 第二节 编写第一个MobiusPi App：Hello World
 本教程以开发一个“HelloWorld”APP为例说明如何通过VS Code实现IG500 Python APP的开发。该APP具备在IG500中每10秒打印一条“hello world!”日志以及导入配置文件修改日志内容的功能。
@@ -228,7 +228,8 @@ MobiusPi提供多种工程模板以方便您快速初始化工程目录。各工
   ```
   - `192.168.1.1`为IG500的FE 0/1口的IP地址
   - `3000`为建议的调试端口号
-  - `HelloWorld/src/main.py`为mian. py的执行路径，请根据您的当前位置适当调整
+  - `HelloWorld/src/main.py`为mian. py的执行路径，请根据您的当前位置适当调整  
+
 
   IG500的Python开发环境内置了ptvsd依赖库用于远程调试代码，想要了解更多ptvsd插件的用法，请访问[ptvsd使用说明](https://github.com/microsoft/ptvsd/)。
   ![](images/2019-12-23-14-59-40.png)
@@ -299,7 +300,7 @@ MobiusPi提供多种工程模板以方便您快速初始化工程目录。各工
 使用pip为APP安装第三方依赖库时需启用IG500的调试模式并且接入互联网。
 ![](./images/2019-12-06-16-42-29.png)
 ![](./images/2019-12-04-10-00-36.png)
-- 步骤1：使用VS Code与IG500建立SFTP连接，详见第二节中的“3.1 建立SFTP连接”。
+- 步骤1：使用VS Code与IG500建立SFTP连接，详见[建立SFTP连接](https://readts.readthedocs.io/en/latest/QuickStart.html#sftp)。
 ![](./images/2019-12-06-16-41-02.png)
  &nbsp;
 
