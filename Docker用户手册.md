@@ -148,9 +148,12 @@ IG902使用Portainer构建，管理和维护Docker镜像和容器。关于Portai
 ### 3.1 如何从gitlab/github上下载docker镜像
 在Portainer的“Local>>Registries”页面点击“Add registry”以添加docker镜像仓库（必须为公开的仓库）。
 ![](images/2020-01-19-10-39-19.png)  </br>
+
 随后选择“Custom registry”并配置镜像仓库信息，配置完毕后点击“Add registry”。
 ![](images/2020-01-19-10-41-31.png)  </br>
+
 镜像仓库添加成功后如下图所示：
 ![](images/2020-01-19-10-44-22.png)  </br>
+
 添加成功后，在拉取docker镜像时可以选择已配置的镜像仓库。
 ![](images/2020-01-19-10-45-04.png)
