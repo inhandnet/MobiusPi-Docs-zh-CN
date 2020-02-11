@@ -16,4 +16,5 @@
    :maxdepth: 2
    :caption: 用户手册
 
+   IG902快速使用手册.md
    Docker用户手册.md
