@@ -80,26 +80,22 @@ Docker 是一个开源的应用容器引擎，让开发者可以打包他们的�
 ### 2.1 安装Docker SDK并启用Docker管理器
 Docker SDK集成了运行docker镜像所需的运行环境以及docker镜像管理器，在使用Docker前必须先安装Docker SDK。如需获取Docker SDK请联系客服。  </br>
 - 步骤1：已有Docker SDK后，进入IG902的“边缘计算>>Docker管理”页面，导入Docker SDK。
-![](images/2020-01-14-13-36-11.png)  </br>
+![](images/2020-02-11-14-03-03.png)  </br>
    &nbsp;
 
-  导入后，IG902将自动安装Docker SDK，安装过程通常需要1-2分钟，请耐心等候。
-![](images/2020-01-14-13-37-06.png)  </br>
-   &nbsp;
-   
-- 步骤2：安装成功后，勾选启用Docker管理器并点击“提交”。
-![](images/2020-01-21-14-26-59.png)  </br>
+- 步骤2：导入后，IG902将自动安装Docker SDK，安装过程通常需要1-2分钟，请耐心等候。安装成功后，勾选启用Docker管理器并点击“提交”。
+![](images/2020-02-11-09-12-14.png)  </br>
    &nbsp;
    
 - 步骤3：启用Docker管理器后，可以修改访问Docker管理器的端口号和登录密码。
-![](images/2020-01-19-11-05-02.png)
+![](images/2020-02-11-14-09-18.png)
 
 ### 2.2 配置Docker管理器--Portainer
 IG902使用Portainer构建，管理和维护Docker镜像和容器。关于Portainer的详细介绍和使用说明请查看[Portainer官网](https://www.portainer.io/overview/)。本文档将为您演示如何在IG902上添加并部署运行一个Nginx docker镜像。
 
 #### 2.2.1 访问Portainer
 - 步骤1：点击Portainer的访问按钮，随后Portainer会提示您需要输入用户名和密码。此时从IG902的“边缘计算>>Docker管理”页面复制用户名和设置的密码后并点击“登录”即可。
-![](images/2020-01-19-11-05-56.png)
+![](images/2020-02-11-14-10-38.png)
 ![](images/2020-01-14-16-02-20.png)  </br>
    &nbsp;
    
@@ -117,7 +113,7 @@ IG902使用Portainer构建，管理和维护Docker镜像和容器。关于Portai
 #### 2.2.2 添加docker镜像
 为Portainer添加docker镜像的方法有两种
 - 方法1：从IG902的“边缘计算>>Docker管理”页面导入本地docker镜像。（导入所需时间根据docker镜像大小而不同；当docker镜像较大时，请耐心等待）
-![](images/2020-01-19-11-06-57.png)  </br>
+![](images/2020-02-11-14-11-20.png)  </br>
    &nbsp;
    
   导入后在Portainer的“Local>>Images”页面可以看到导入成功的docker镜像。
