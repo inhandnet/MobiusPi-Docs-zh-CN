@@ -79,8 +79,8 @@ Docker 是一个开源的应用容器引擎，让开发者可以打包他们的�
 ## 2.启用并配置Docker管理器
 ### 2.1 安装Docker SDK并启用Docker管理器
 Docker SDK集成了运行docker镜像所需的运行环境以及docker镜像管理器，在使用Docker前必须先安装Docker SDK。如需获取Docker SDK请联系客服。  </br>
-- 步骤1：已有Docker SDK后，进入IG902的“边缘计算>>Docker管理”页面，导入Docker SDK。
-![](images/2020-02-11-14-03-03.png)  </br>
+- 步骤1：已有Docker SDK后，进入IG902的“边缘计算>>Docker管理”页面，关闭Docker管理器并导入Docker SDK。
+![](images/2020-02-11-15-44-40.png)  </br>
    &nbsp;
 
 - 步骤2：导入后，IG902将自动安装Docker SDK，安装过程通常需要1-2分钟，请耐心等候。安装成功后，勾选启用Docker管理器并点击“提交”。
