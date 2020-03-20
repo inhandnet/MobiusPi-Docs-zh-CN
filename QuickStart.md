@@ -1,13 +1,16 @@
 # **第一章 MobiusPi Python开发快速入门**
 MobiusPi是北京映翰通网络技术股份有限公司InGateway系列软硬件产品的代号。  <br/>InGateway系列产品包含两个大的产品系列，InGateway900和InGateway500系列。本文档旨在为用户说明如何使用MobiusPi硬件产品进行Python开发， 以下文档中将InGateway500简称为“IG500”；InGateway900简称为“IG900”。
+
 ## 第一节 搭建MobiusPi开发环境
 ### 1. 准备硬件设备及其网络环境
 #### 1.1 接通电源并使用网线连接PC
 - 准备IG500硬件设备  
+  
   接通IG500的电源并按照拓扑使用以太网线连接PC和IG500。  <br/>
-![](./images/2019-11-29-15-54-55.png)  
+![](images/2020-02-20-09-25-01.png)  
 
 - 准备IG900硬件设备  
+  
   接通IG900的电源并按照拓扑使用以太网线连接PC和IG900。  <br/>
 ![](images/2020-02-17-17-53-43.png)
 #### 1.2 设置LAN网络参数
