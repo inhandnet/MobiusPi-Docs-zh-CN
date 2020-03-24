@@ -335,3 +335,7 @@ MobiusPi提供多种工程模板以方便您快速初始化工程目录。各工
  &nbsp;
 
   A2:确保“sftp.json”文件中的password项与MobiusPi的密码一致。一致后重新建立SFTP连接并同步代码。
+
+- Q3：在开发过程中需要使用IG900的串口和网口，如何调用？
+  
+  A3：RS485串口名称为：`/dev/ttyO3`；RS232串口名称为：`/dev/ttyO1`。串口和网口均可以使用Python标准的串口/网口使用方法进行调用，如使用`pyserial`库调用串口。
