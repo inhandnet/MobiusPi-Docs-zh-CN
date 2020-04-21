@@ -42,6 +42,10 @@ MobiusPi是北京映翰通网络技术股份有限公司InGateway系列软硬件
 
 下载完成后运行安装程序，安装成功后打开VS Code软件，软件页面如下图。
 ![](./images/2019-11-29-15-35-23.png)
+
+#### 2.3 安装OpenSSH
+您可以访问：https://www.openssh.com 获取相应的OpenSSH工具并安装至PC，使PC支持SSH协议。
+
 ### 3. 准备VS Code开发环境
 #### 3.1 安装VS Code扩展插件
 为了在MobiusPi上开发并调试Python代码，您要在VS Code IDE的“Extensions”中安装以下必需的扩展插件：  
@@ -171,8 +175,8 @@ MobiusPi提供多种工程模板以方便您快速初始化工程目录。各工
 ![](./images/2019-12-05-10-43-46.png)
  &nbsp;
 
-- 步骤4：输入后命令面板会提示您需要输入SFTP服务器的IP地址（即“host”项内容）。
-![](./images/2019-12-05-10-44-51.png)
+- 步骤4：随后命令面板会提示您需要选择要连接的SFTP服务器，选择`sftp.json`中的SFTP服务器并回车即可。
+![](images/2020-04-21-19-19-25.png)
  &nbsp;
 
 - 步骤5：首次连接时“终端”窗口会提示您是否要继续连接，此时输入“yes”并回车。随后再次在命令面板中输入`>SFTP:Open SSH in Terminal`和SFTP服务器的IP地址。
@@ -339,3 +343,8 @@ MobiusPi提供多种工程模板以方便您快速初始化工程目录。各工
 - Q3：在开发过程中需要使用IG900的串口和网口，如何调用？
   
   A3：RS485串口名称为：`/dev/ttyO3`；RS232串口名称为：`/dev/ttyO1`。串口和网口均可以使用Python标准的串口/网口使用方法进行调用，如使用`pyserial`库调用串口。
+  <br> </br>
+- Q4：与MobiusPi建立SFTP连接时提示“SSH错误”，如下图所示：  
+  ![](images/2020-04-21-20-01-17.png)  
+
+  A4：请安装OpenSSH工具以支持SSH协议。您可以访问：https://www.openssh.com 获取相应的OpenSSH工具。
