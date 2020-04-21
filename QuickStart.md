@@ -345,6 +345,6 @@ MobiusPi提供多种工程模板以方便您快速初始化工程目录。各工
   A3：RS485串口名称为：`/dev/ttyO3`；RS232串口名称为：`/dev/ttyO1`。串口和网口均可以使用Python标准的串口/网口使用方法进行调用，如使用`pyserial`库调用串口。
   <br> </br>
 - Q4：与MobiusPi建立SFTP连接时提示“SSH错误”，如下图所示：  
-  ![](images/2020-04-21-20-01-17.png)  
+  ![](images/2020-04-21-20-25-55.png)  
 
   A4：请安装OpenSSH工具以支持SSH协议。您可以访问：https://www.openssh.com 获取相应的OpenSSH工具。
