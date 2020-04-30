@@ -86,6 +86,7 @@ MobiusPi提供多种工程模板以方便您快速初始化工程目录。各工
   - `.vscode`：VS Code配置文件夹
     - `sftp.json`:SFTP插件的配置文件，用于与MobiusPi建立SFTP连接
   - `build`：App发布包文件夹
+  - `lib`：App第三方依赖库文件夹
   - `src`：App源码文件夹
     - `main.py`：App入口
     - `parse_config.py`:解析App配置文件
@@ -109,7 +110,6 @@ MobiusPi提供多种工程模板以方便您快速初始化工程目录。各工
   - `build`：App发布包文件夹
   - `src`：App源码文件夹
     - `main.py`：App入口
-  - `config.yaml`：App配置文件，内容可自定义
   - `setup.py`:App版本、SDK版本等信息说明，建议参照标准模板定义  
    &nbsp;
 
